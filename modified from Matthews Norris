@@ -12,3 +12,10 @@ Have a nice weekend,
 
 Best wishes,
 Matt
+
+
+Hi Minglei,
+
+Here is the code file containing the pseudo free energy parameters in GTFold, it's the method at the bottom of the file:
+
+https://github.com/gtfold/gtfold/blob/master/gtfold-mfe/src/shapereader.cc
