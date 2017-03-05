@@ -1,0 +1,14 @@
+This new version of GTFold allows the slope(m) and intercept(b) parameters to be passed in from the command line. Previously these were hardcoded into the pseudo free energy equation, so there was no easy way of testing alternative m and b values.
+
+We should probably create a pull request, then hopefully the authors will merge this work into their repo to fix this issue with the official GTFold program.
+
+Next step is to run GTFold across a range of m and b values, using the new SHAPE reactivities calculated with the MLE method. We can then use the resulting structure predictions to generate a PPV heatmap, similar to that of Diegan et al.
+
+One thing to mention here is that in the earlier work by Diegen et al, they generated PPVs by comparing MFE against the phylogenetic structure. I think we should do the same thing to start off, as it will be easy to try the established method first.
+
+But then as planned we should also generate a base pair probability matrix (BPPM) for each combination of m and b values, and come up with a method of comparing the BPPM against the phylogenetic structure, since the BPPM is a nice representation of the structural ensemble. I will do a bit of digging around to figure this out, let me know if you have any ideas.
+
+Have a nice weekend,
+
+Best wishes,
+Matt
